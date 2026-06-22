@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Pengumpulan Tugas</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+/* BACKGROUND */
+body{
+    background: linear-gradient(-45deg, #064e3b, #065f46, #022c22, #047857);
+    background-size: 400% 400%;
+    animation: bgGerak 10s ease infinite;
+}
+
+@keyframes bgGerak{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:50px 20px;
+    color:white;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+}
+
+/* TEKS BERJALAN */
+.running-text{
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.running-text h1{
+    display:inline-block;
+    padding-left:100%;
+    animation: jalan 10s linear infinite;
+    font-size:2rem;
+}
+
+@keyframes jalan{
+    0%{transform:translateX(0);}
+    100%{transform:translateX(-100%);}
+}
+
+/* CONTAINER */
+.container{
+    max-width:1200px;
+    margin:30px auto;
+    padding:20px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+/* CARD FULL HIJAU */
+.card{
+    border-radius:15px;
+    padding:25px;
+    background: linear-gradient(135deg,#22c55e,#15803d);
+    color:white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* TEXT */
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    margin-bottom:10px;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    padding:10px 15px;
+    background:#064e3b;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.btn:hover{
+    background:#022c22;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="running-text">
+        <h1>📚 Website Pengumpulan Tugas Algoritma Pemrograman</h1>
+    </div>
+    <p>KUMPULAN TUGAS DARI PERTEMUAN 4 SAMPAI 12</p>
+</header>
+
+<div class="container">
+    <div class="grid">
+
+        <div class="card">
+            <h3>📖 PERTEMUAN 4</h3>
+            <p>Tugas 1</p>
+            <a href="pertemuan4.html" class="btn">LIHAT TUGAS</a>
+        </div>
+
+        <div class="card">
+            <h3>📖 PERTEMUAN 5</h3>
+            <p>Tugas 2</p>
+            <a href="pertemuan5.html" class="btn">LIHAT TUGAS</a>
+        </div>
+
+        <div class="card">
+            <h3>📖 PERTEMUAN 6</h3>
+            <p>Tugas 3</p>
+            <a href="pertemuan6.html" class="btn">LIHAT TUGAS</a>
+        </div>
+
+        <div class="card">
+            <h3>📖 PERTEMUAN 9</h3>
+            <p>Tugas 4</p>
+            <a href="pertemuan9.html" class="btn">LIHAT TUGAS</a>
+        </div>
+
+        <div class="card">
+            <h3>📖 PERTEMUAN 10</h3>
+            <p>Tugas 5</p>
+            <a href="pertemuan10.html" class="btn">LIHAT TUGAS</a>
+        </div>
+
+        <div class="card">
+            <h3>📖 PERTEMUAN 11</h3>
+            <p>Tugas 6</p>
+            <a href="pertemuan13.html" class="btn">LIHAT TUGAS</a>
+        </div>
+
+        <div class="card">
+            <h3>📖 PERTEMUAN 12</h3>
+            <p>Tugas 7</p>
+            <a href="pertemuan12.html" class="btn">LIHAT TUGAS</a>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>
